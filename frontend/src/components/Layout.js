@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Shield, Activity, Bug, Zap, GraduationCap, LayoutDashboard } from "lucide-react";
+import { Shield, Activity, Bug, Zap, GraduationCap, LayoutDashboard, Info, Users } from "lucide-react";
 
 export const Layout = ({ children }) => {
   const location = useLocation();
@@ -10,7 +10,9 @@ export const Layout = ({ children }) => {
     { path: "/ransomware", label: "Ransomware", icon: Bug },
     { path: "/attack-scenario", label: "Attack Scenario", icon: Zap },
     { path: "/training", label: "Training", icon: GraduationCap },
+    { path: "/multiplayer", label: "Multiplayer", icon: Users },
     { path: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
+    { path: "/about", label: "About", icon: Info },
   ];
   
   return (
